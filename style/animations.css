@@ -1,0 +1,46 @@
+@keyframes color-roll {
+    0%,100%   {color:white;}
+    12.5%  {color:#f7ff00;}
+    25%  {color:#ffb307;}
+    37.5% {color:#f00;}
+    50% {color:#ff00c4;}
+    62.5% {color:#0b00ff;}
+    75% {color:#00fff5;}
+    87.5% {color:#0bff00;}
+}
+
+/* Firefox */
+@-moz-keyframes color-roll {
+    0%,100%   {color:white;}
+    12.5%  {color:#f7ff00;}
+    25%  {color:#ffb307;}
+    37.5% {color:#f00;}
+    50% {color:#ff00c4;}
+    62.5% {color:#0b00ff;}
+    75% {color:#00fff5;}
+    87.5% {color:#0bff00;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes color-roll {
+    0%,100%   {color:white;}
+    12.5%  {color:#f7ff00;}
+    25%  {color:#ffb307;}
+    37.5% {color:#f00;}
+    50% {color:#ff00c4;}
+    62.5% {color:#0b00ff;}
+    75% {color:#00fff5;}
+    87.5% {color:#0bff00;}
+}
+
+/* Opera */
+@-o-keyframes color-roll {
+    0%,100%   {color:white;}
+    12.5%  {color:#f7ff00;}
+    25%  {color:#ffb307;}
+    37.5% {color:#f00;}
+    50% {color:#ff00c4;}
+    62.5% {color:#0b00ff;}
+    75% {color:#00fff5;}
+    87.5% {color:#0bff00;}
+}

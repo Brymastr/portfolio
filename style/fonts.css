@@ -1,0 +1,9 @@
+@font-face {
+	font-family: Code_Bold;
+	src: url('fonts/code/CODE Bold.otf');
+}
+
+@font-face {    /* line height for this font is 2px off. Use height property in element css */
+	font-family: Code_Light;
+	src: url('fonts/code/CODE Light.otf');
+}

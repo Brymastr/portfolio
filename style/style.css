@@ -1,0 +1,87 @@
+/* PAGE */
+html, body {
+    height: 100%;
+}
+
+/* SIDEBAR */
+
+#sidebar {
+    position: relative;
+    width: 25%;
+    min-width: 250px;
+    float: left;
+    height: inherit;
+    color: white;
+    background-color: black;
+}
+
+#header {
+    text-align: right;
+    border-bottom: solid 1px white;
+    padding: 15px;
+}
+
+#title {
+    font-size: 35pt;
+    font-family: Code_Bold;
+    height: 40px;    
+}
+
+#title a {
+    color: white;
+}
+
+#title a:hover {
+    animation: color-roll 10s linear infinite;
+    -moz-animation: color-roll 10s linear infinite; /* Firefox */
+    -webkit-animation: color-roll 10s linear infinite; /* Safari and Chrome */
+    -o-animation: color-roll 10s linear infinite; /* Opera */
+}
+
+#subtitle {
+    margin-top: 13px;
+    font-family: Code_Light;
+    font-size: 16pt;
+}
+
+#menu {
+    font-family: Code_Light;
+    text-align: right;
+    font-size: 23pt;
+    position: relative;
+    top: 20%;
+}
+
+.menu-item {
+    display: block;
+    color: white;
+    position: relative;
+}
+
+.menu-item a {
+    display: block;
+    color: white;
+    position: relative;
+    padding: 15px;
+    height: 28px
+}
+
+.menu-hover-bar {
+    width: 0;
+    height: 100%;
+    background-color: #262626;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width .8s;
+}
+
+.menu-item:hover > .menu-hover-bar {
+    width: 100%;
+}
+
+/* BODY */
+
+
+
+/* FOOOTER */
