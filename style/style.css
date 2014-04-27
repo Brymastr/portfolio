@@ -1,6 +1,11 @@
 /* PAGE */
 html, body {
     height: 100%;
+    min-width: 520px;
+}
+
+.right {
+    text-align: right;
 }
 
 /* SIDEBAR */
@@ -8,37 +13,36 @@ html, body {
 #sidebar {
     position: relative;
     width: 25%;
-    min-width: 250px;
+    min-width: 260px;
     float: left;
     height: inherit;
     color: white;
     background-color: black;
 }
 
-#header {
-    text-align: right;
-    border-bottom: solid 1px white;
+.header-main {
+    border-bottom: solid 2px white;
     padding: 15px;
 }
 
-#title {
+.title {
     font-size: 35pt;
     font-family: Code_Bold;
     height: 40px;    
 }
 
-#title a {
+.title a {
     color: white;
 }
 
-#title a:hover {
+.title a:hover {
     animation: color-roll 10s linear infinite;
     -moz-animation: color-roll 10s linear infinite; /* Firefox */
     -webkit-animation: color-roll 10s linear infinite; /* Safari and Chrome */
     -o-animation: color-roll 10s linear infinite; /* Opera */
 }
 
-#subtitle {
+.subtitle {
     margin-top: 13px;
     font-family: Code_Light;
     font-size: 16pt;
@@ -82,6 +86,13 @@ html, body {
 
 /* BODY */
 
+.header-page {
+    border-bottom: 3px solid black;
+    padding: 15px;
+    float: left;
+    width: 25%;
+    min-width: 260px;
+}
 
 
 /* FOOOTER */
