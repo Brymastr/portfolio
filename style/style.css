@@ -1,7 +1,7 @@
 /* PAGE */
 html, body {
     height: 100%;
-    min-width: 520px;
+    min-width: 620px;
 }
 
 .right {
@@ -11,9 +11,8 @@ html, body {
 /* SIDEBAR */
 
 #sidebar {
-    position: relative;
-    width: 25%;
-    min-width: 260px;
+    position: absolute;
+    width: 330px;;
     float: left;
     height: inherit;
     color: white;
@@ -86,13 +85,28 @@ html, body {
 
 /* BODY */
 
+#content-outer {
+    float: left;
+    width: 100%;
+}
+
+#content  {
+    margin-left: 330px;
+}
+
 .header-page {
     border-bottom: 3px solid black;
     padding: 15px;
     float: left;
-    width: 25%;
+    width: 330px;
     min-width: 260px;
+    clear: right;
 }
 
+#carousel {
+    clear: left;
+    width: 100%;
+    text-align: center;
+}
 
 /* FOOOTER */
