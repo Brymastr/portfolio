@@ -27,12 +27,13 @@ html, body {
 
 .title {
     font-size: 35pt;
-    font-family: Code_Bold;
+    font-family: Code_Bold;    
     height: 40px;    
 }
 
 .title a {
     color: white;
+    text-decoration: none;
 }
 
 .title a:hover {
@@ -67,7 +68,8 @@ html, body {
     color: white;
     position: relative;
     padding: 15px;
-    height: 28px
+    height: 28px;
+    text-decoration: none;
 }
 
 .menu-hover-bar {
@@ -92,6 +94,10 @@ html, body {
     float: left;
     width: 25%;
     min-width: 260px;
+}
+
+.full-height {
+    height: 100%;
 }
 
 

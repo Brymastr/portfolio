@@ -1,49 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Brycen Dorsay Development</title>
-    <link href="style/css-reset.css" rel="stylesheet" type="text/css" />
-    <link href="style/fonts.css" rel="stylesheet" type="text/css" />
-	<link href="style/style.css" rel="stylesheet" type="text/css" />
-    <link href="style/animations.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="js/actions.js"></script>
+    <meta charset="utf-8">
+    <title>Ember Starter Kit</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/css-reset.css">
+    <link href="css/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="css/animations.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-    
-    <div id="sidebar">
+    <script type="text/x-handlebars">
+        <div id="sidebar">
         
-        <div class="header-main right">
-            <h2 class="title"><a href="index.html">B. DORSAY</a></h1>
-            <h3 class="subtitle">Development</h3>
+            <div class="header-main right">
+                <h2 class="title"><a href="index.html">B. DORSAY</a></h1>
+                <h3 class="subtitle">Development</h3>
+            </div>
+
+            <div id="menu">
+                <div class="menu-item">
+                    <div class="menu-hover-bar"></div>
+                    {{#link-to 'home'}}Home{{/link-to}}
+                </div>
+                <div class="menu-item">
+                    <div class="menu-hover-bar"></div>
+                    {{#link-to 'projects'}}Projects{{/link-to}}
+                </div>
+                <div class="menu-item">
+                    <div class="menu-hover-bar"></div>
+                    {{#link-to 'resume'}}Resume{{/link-to}}
+                </div>
+                <div class="menu-item">
+                    <div class="menu-hover-bar"></div>
+                    {{#link-to 'contact'}}Contact{{/link-to}}
+                </div>
+            </div>
         </div>
         
-        <div id="menu">
-            <div class="menu-item">
-                <div class="menu-hover-bar"></div>
-                <a href="index.html">Home</a>
-            </div>
-            <div class="menu-item">
-                <div class="menu-hover-bar"></div>
-                <a href="projects.html">Projects</a>
-            </div>
-            <div class="menu-item">
-                <div class="menu-hover-bar"></div>
-                <a href="resume.html">Resume</a>
-            </div>
-            <div class="menu-item">
-                <div class="menu-hover-bar"></div>
-                <a href="contact.html">Contact</a>
+        {{outlet}}
+        
+    </script>
+    
+    <!-- HOME -->
+    <script type="text/x-handlebars" id="home">
+        <div id="content">
+            <div class="header-page">
+                <h1 class="title">Home</h1>
+                <h2 class="subtitle">Welcome</h2>
             </div>
         </div>
-    </div>
+    </script>
     
-    <div id="content">
+    <!-- PROJECTS -->
+    <script type="text/x-handlebars" id="projects">
+        <div id="content">
         <div class="header-page">
-            <h1 class="title">Home</h1>
-            <h2 class="subtitle">Welcome</h2>
+            <h1 class="title">Projects</h1>
+            <h2 class="subtitle">Explore</h2>
         </div>
     </div>
+    </script>
+    
+    <!-- RESUME -->
+    <script type="text/x-handlebars" id="resume">
+        <div id="content">
+        <div class="header-page">
+            <h1 class="title">Resume</h1>
+            <h2 class="subtitle">Inquire</h2>
+        </div>
+    </div>
+    </script>
+    
+    <!-- CONTACT -->
+    <script type="text/x-handlebars" id="contact">
+        <div id="content">
+        <div class="header-page">
+            <h1 class="title">Contact</h1>
+            <h2 class="subtitle">Call Me</h2>
+        </div>
+    </div>
+    </script>
+
+    <script src="js/libs/jquery-1.10.2.js"></script>
+    <script src="js/libs/handlebars-1.1.2.js"></script>
+    <script src="js/libs/ember-1.6.1.js"></script>
+    <script src="js/app.js"></script>
+    <!-- to activate the test runner, add the "?test" query string parameter -->
+    <script src="tests/runner.js"></script>
 </body>
 </html>
